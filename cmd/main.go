@@ -1,6 +1,8 @@
-package cmd
+package main
 
-import "../http_proxy"
+import (
+	"../http_proxy"
+)
 func main() {
-	http_proxy.Show()
+	http_proxy.Start()
 }
