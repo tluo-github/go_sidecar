@@ -44,7 +44,7 @@ func handleClientRequest(client net.Conn)  {
 		return
 	}
 	//获得了请求的host和port，就开始拨号吧
-	server, err := net.Dial("tcp", ":8080")
+	server, err := net.Dial("tcp", "127.0.0.1:8000")
 	if err != nil {
 		log.Println(err)
 		return
